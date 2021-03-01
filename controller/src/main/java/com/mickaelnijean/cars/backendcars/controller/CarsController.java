@@ -18,15 +18,15 @@ public class CarsController {
     
     public List<Car> mockCarsDatabase() {
         return Arrays.asList(
-                Car.builder().brand("Tesla").motor(Motor.ELECTRIC).name("Model 3").color("red").build(),
-                Car.builder().brand("Tesla").motor(Motor.ELECTRIC).name("Model 3").color("red").build(),
-                Car.builder().brand("Tesla").motor(Motor.ELECTRIC).name("Model 3").color("blue").build(),
-                Car.builder().brand("Tesla").motor(Motor.ELECTRIC).name("Model S").color("red").build(),
-                Car.builder().brand("Tesla").motor(Motor.ELECTRIC).name("Model S").color("blue").build(),
-                Car.builder().brand("Tesla").motor(Motor.ELECTRIC).name("Model S").color("black").build(),
-                Car.builder().brand("Renault").motor(Motor.DIESEL).name("Clio").color("blue").build(),
-                Car.builder().brand("Renault").motor(Motor.DIESEL).name("Megane").color("red").build(),
-                Car.builder().brand("Renault").motor(Motor.PETROL).name("Clio").color("white").build()
+                Car.builder().brand("Tesla").motor(Motor.ELECTRIC).name("Model 3").color("black").price(701).build(),
+                Car.builder().brand("Tesla").motor(Motor.ELECTRIC).name("Model 3").color("red").price(702).isNotAvailable(true).build(),
+                Car.builder().brand("Tesla").motor(Motor.ELECTRIC).name("Model 3").color("blue").price(703).build(),
+                Car.builder().brand("Tesla").motor(Motor.ELECTRIC).name("Model S").color("red").price(704).build(),
+                Car.builder().brand("Tesla").motor(Motor.ELECTRIC).name("Model S").color("blue").price(705).build(),
+                Car.builder().brand("Tesla").motor(Motor.ELECTRIC).name("Model S").color("black").price(706).build(),
+                Car.builder().brand("Renault").motor(Motor.DIESEL).name("Clio").color("blue").price(707).build(),
+                Car.builder().brand("Renault").motor(Motor.DIESEL).name("Megane").color("red").price(708).build(),
+                Car.builder().brand("Renault").motor(Motor.PETROL).name("Clio").color("white").price(709).build()
         );
     }
     

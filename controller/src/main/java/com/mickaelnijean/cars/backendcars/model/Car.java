@@ -8,4 +8,6 @@ public class Car {
     private String name;
     private String color;
     private Motor motor;
+    private boolean isNotAvailable;
+    private long price;
 }
