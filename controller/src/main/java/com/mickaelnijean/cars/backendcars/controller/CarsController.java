@@ -1,9 +1,6 @@
 package com.mickaelnijean.cars.backendcars.controller;
 
-import com.mickaelnijean.cars.backendcars.model.Car;
-import com.mickaelnijean.cars.backendcars.model.Motor;
-import com.mickaelnijean.cars.backendcars.model.Preference;
-import com.mickaelnijean.cars.backendcars.model.User;
+import com.mickaelnijean.cars.backendcars.model.*;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Arrays;
@@ -18,15 +15,15 @@ public class CarsController {
     
     public List<Car> mockCarsDatabase() {
         return Arrays.asList(
-                Car.builder().brand("Tesla").motor(Motor.ELECTRIC).name("Model 3").color("red").build(),
-                Car.builder().brand("Tesla").motor(Motor.ELECTRIC).name("Model 3").color("red").build(),
-                Car.builder().brand("Tesla").motor(Motor.ELECTRIC).name("Model 3").color("blue").build(),
-                Car.builder().brand("Tesla").motor(Motor.ELECTRIC).name("Model S").color("red").build(),
-                Car.builder().brand("Tesla").motor(Motor.ELECTRIC).name("Model S").color("blue").build(),
-                Car.builder().brand("Tesla").motor(Motor.ELECTRIC).name("Model S").color("black").build(),
-                Car.builder().brand("Renault").motor(Motor.DIESEL).name("Clio").color("blue").build(),
-                Car.builder().brand("Renault").motor(Motor.DIESEL).name("Megane").color("red").build(),
-                Car.builder().brand("Renault").motor(Motor.PETROL).name("Clio").color("white").build()
+                ElectricCar.builder().brand("Tesla").name("Model 3").color("red").price(100).build(),
+                ElectricCar.builder().brand("Tesla").name("Model 3").color("red").price(101).build(),
+                ElectricCar.builder().brand("Tesla").name("Model 3").color("blue").price(102).build(),
+                ElectricCar.builder().brand("Tesla").name("Model S").color("red").price(103).build(),
+                ElectricCar.builder().brand("Tesla").name("Model S").color("blue").price(104).build(),
+                ElectricCar.builder().brand("Tesla").name("Model S").color("black").price(105).build(),
+                DieselCar.builder().brand("Renault").name("Clio").color("blue").price(106).build(),
+                DieselCar.builder().brand("Renault").name("Megane").color("red").price(107).build(),
+                PetrolCar.builder().brand("Renault").name("Clio").color("white").price(108).build()
         );
     }
     

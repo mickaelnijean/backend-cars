@@ -1,11 +1,12 @@
 package com.mickaelnijean.cars.backendcars.model;
 
-import lombok.Builder;
+import lombok.AllArgsConstructor;
 
-@Builder
-public class Car {
-    private String brand;
-    private String name;
-    private String color;
-    private Motor motor;
+@AllArgsConstructor
+public abstract class Car {
+    protected String brand;
+    protected String name;
+    protected String color;
+    protected Motor motor;
+    protected int price;
 }
